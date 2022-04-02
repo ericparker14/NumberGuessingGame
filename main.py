@@ -36,9 +36,9 @@ def compare_guess(user_num, answer, lives):
 
 
 def game():
+    """To run the game functionality if the user says yes to play game"""
     clear()
     print(logo)
-    """To run the game functionality if the user says yes to play game"""
     answer = randint(1, 100)
     # some opening statements
     print("Welcome to the number guessing game!")
