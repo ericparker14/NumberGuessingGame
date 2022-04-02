@@ -8,7 +8,7 @@ HARD_MODE_TURNS = 5
 
 def difficulty():
     """Sets the difficulty of the game by user choice"""
-    level = input("Choose a difficulty: 'easy' or 'hard'")
+    level = input("Choose a difficulty: 'easy' or 'hard':\n")
     if level == "easy":
         return EASY_MODE_TURNS
     else:
@@ -43,7 +43,6 @@ def game():
     # some opening statements
     print("Welcome to the number guessing game!")
     print("I am thinking of a number between 1 and 100...")
-    print(f"P.S. the answer is {answer}")
     is_game_over = False
     turns = difficulty()
     guess = 0
@@ -54,7 +53,7 @@ def game():
             print(f"You have {turns} lives left, you lose. The answer was {answer}")
             return is_game_over
         elif guess != answer:
-            print(f"You have {turns} left, guess again!")
+            print(f"You have {turns} left, guess again! ")
 
 
 while input("Do you want to play the number picker game? Enter 'y' for yes and 'n' for no\n") == "y":
